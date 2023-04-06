@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="./aframe-spe-particles-component.min.js"></script>
+    <script src="https://cdn.rawgit.com/ngokevin/kframe/csstricks/scenes/rounded/src/index.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-text/master/dist/aframe-text.min.js"></script>
+  </head>
+</head>
+
+<body>
+    <a-scene id="fireworks">
+        <a-camera position="0 0 3">
+        </a-camera>
+        <a-sky color="black"></a-sky>
+
+        <a-entity position="0.8 2 -3">
+              <a-entity text="value: Happy Diwali!; color: #fff; width: 1.2; wrapCount: 12; font: roboto;"></a-entity>
+        </a-entity>
+
+        <a-entity 
+        position="3 1.5 0" 
+        spe-particles="
+            color: purple, orange, green, pink;
+            distribution: sphere;
+            randomize-velocity: true;
+            velocity: 0.5;
+            velocity-spread: 1;
+            radius: 0.5;
+            drag: 1;
+            particle-count: 1000;
+            size: 0.5, 0.4, 0.3, 0.2;
+            max-age: 2;
+            duration: -1;
+            blending: additive;
+        "
+        ></a-entity>
+
+        <a-entity 
+        position="0.5 2 0" 
+        spe-particles="
+            color: blue, green, cyan;
+            distribution: sphere;
+            randomize-velocity: true;
+            velocity: 0.5;
+            velocity-spread: 0.5;
+            radius: 0.1;
+            drag: 1;
+            particle-count: 1000;
+            size: 0.3, 0.2, 0.1;
+            max-age: 2;
+            duration: -1;
+            blending: additive;
+        "
+        ></a-entity>
+
+        <a-entity 
+        position="-2 1 0" 
+        spe-particles="
+            color: orange, red, yellow, pink;
+            distribution: sphere;
+            randomize-velocity: true;
+            velocity:0.6;
+            velocity-spread: 1;
+            radius: 0.5;
+            drag: 1.5;
+            particle-count: 1000;
+            size: 0.5, 0.4, 0.3, 0.2;
+            max-age: 2;
+            duration: -1;
+            blending: additive;
+        "
+        ></a-entity>
+
+        <a-entity 
+        position="0.5 -1 0" 
+        spe-particles="
+            color: purple, pink, cyan, blue;
+            distribution: sphere;
+            randomize-velocity: true;
+            velocity: 0.5;
+            velocity-spread: 2;
+            radius: 0.5;
+            drag: 1;
+            particle-count: 1000;
+            size: 0.5, 0.4, 0.3, 0.2;
+            max-age: 2;
+            duration: -1;
+            blending: additive;
+        "
+        ></a-entity>
+
+        <a-entity 
+        position="4 -1.5 0" 
+        spe-particles="
+            color: cyan, green, blue;
+            distribution: sphere;
+            randomize-velocity: true;
+            velocity: 0.5;
+            velocity-spread: 0.5;
+            radius: 0.1;
+            drag: 1;
+            particle-count: 1000;
+            size: 0.3, 0.2, 0.1;
+            max-age: 2;
+            duration: -1;
+            blending: additive;
+        "
+        ></a-entity>
+
+        <a-entity 
+        position="-3 -1.5 0" 
+        spe-particles="
+            color: yellow, red, purple, pink;
+            distribution: sphere;
+            randomize-velocity: true;
+            velocity: 0.5;
+            velocity-spread: 0.5;
+            radius: 0.1;
+            drag: 1;
+            particle-count: 1000;
+            size: 0.3, 0.2, 0.1;
+            max-age: 2;
+            duration: -1;
+            blending: additive;
+        "
+        ></a-entity>
+
+    </a-scene>
+</body>
+
+</html>
